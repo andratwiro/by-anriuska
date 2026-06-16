@@ -21,10 +21,19 @@ Build her a website. Chosen features:
 ## Decisions made
 - **Language:** Spanish, mobile-first (most traffic via the IG link, on phones).
 - **Tech:** Static site (plain HTML/CSS/JS). Free hosting (Netlify / GitHub Pages / Vercel).
-- **Booking:** "Real booking system" requested. On a static site the clean path is an
-  embedded third-party scheduler that *she* controls. Recommendation: **Cal.com**
-  (free, open-source, mobile-friendly, self-managed availability). She creates a free
-  account; we wire her booking link/username into the site. Placeholder until then.
+- **Booking:** "Real booking system" requested — embedded third-party scheduler she
+  controls, wired into the static site. **DECISION (2026-06-16): SimplyBook.me**, not
+  Cal.com. Anriuska's requirements: pick a service w/ price tag, per-service durations
+  (manos vs manos+pies = longer), **attach a photo at booking** (client inspo), and
+  later **deposit/prepay** to cut no-shows. Photo-upload-at-booking is the decider:
+  Cal.com's file upload is an unshipped feature request; Square has no upload during
+  booking; Fresha undocumented. SimplyBook.me does all four + Spanish + Google Calendar
+  sync + embeddable widget we can style to her palette.
+  - Phase 1 (launch): service menu + prices + durations + photo-upload intake + calendar.
+  - Phase 2 (once regularised): enable deposits/prepayment. No rebuild.
+  - CAVEAT: free tier ~50 bookings/mo and only ONE "custom feature" at a time; Intake
+    Forms and Accept Deposits are SEPARATE custom features → photo intake + deposits
+    together needs the entry paid plan. Verify live pricing before she signs up.
 - **Content source:** "Pull from her Instagram" — BUT both Instagram AND Facebook
   block automated scraping (login-gated; fetches only returned name + "Maracaibo").
   WORKAROUND: Claude can read image files. Owner to drop screenshots/downloads of her
