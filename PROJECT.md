@@ -43,6 +43,22 @@ Build her a website. Chosen features:
   - Phase 2 (busier/regularised → Basic ~€12/mo, 3 slots): add Calendar Sync + Deposits.
     No rebuild. Claude to prep exact menu (service / duration / price / field config)
     for manual entry + step-by-step setup instructions.
+  - ALTERNATIVES RESEARCHED & REJECTED (2026-06-16, 3-angle deep dive). The decider =
+    CLIENT uploads inspo photo DURING booking; almost everything fails it.
+    - Open source: NOT worth it. Cal.com rejected client file-upload (#13887 "not
+      planned") + went closed-source v6.4; only it embeds cleanly yet fails decider.
+      Easy!Appointments = text fields only, no payments. Booked/LibreBooking = upload
+      works but it's room-reservation, no embed widget. Amelia/BookingPress/Booknetic =
+      upload only on paid (~$89/yr) + full WordPress + can't embed in static site.
+      Every photo-capable OSS path needs a server/WordPress + maintenance + recurring $.
+    - Marketplace SaaS (Fresha/Booksy/Treatwell): fail decider (business-side attach
+      only) AND take commission on new clients (20-30%) + list competitors. Avoid.
+    - Closest challengers, all lose: zcal (✅upload+free but ENGLISH-ONLY), Acuity
+      (✅upload but no free tier ~$16/mo), EasyWeek (Spanish+free but NO file-upload
+      field — confirmed), Vagaro (~$24/mo, no free). Square/Calendly/Setmore/TidyCal/
+      YouCanBookMe/Appointlet = no client upload at booking.
+    - CONCLUSION: SimplyBook.me is the only tool doing client-photo-upload + full
+      Spanish + embeddable widget + real free tier. Decision stands.
 - **Content source:** "Pull from her Instagram" — BUT both Instagram AND Facebook
   block automated scraping (login-gated; fetches only returned name + "Maracaibo").
   WORKAROUND: Claude can read image files. Owner to drop screenshots/downloads of her
