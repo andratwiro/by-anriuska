@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>by Anriuska ~ Uñas y peinados a domicilio en Reus ~</title>
+  <meta name="description" content="Anriuska — manicurista y peinadora venezolana a domicilio en Reus. ¡Sabor latino y mucho cariño! 🌺" />
+  <meta name="theme-color" content="#e8623a" />
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Nunito:ital,wght@0,400;0,600;0,800;1,600&family=VT323&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="retro.css" />
+</head>
+<body>
+
+  <!-- papel picado banner -->
+  <div class="papel" aria-hidden="true">
+    <span></span><span></span><span></span><span></span><span></span><span></span>
+    <span></span><span></span><span></span><span></span><span></span><span></span>
+  </div>
+
+  <!-- welcome scroller -->
+  <marquee class="bienvenida" scrollamount="5" direction="left">
+    🌴 ¡Bienvenid@s a mi rinconcito! 🌺 uñas 💅 peinados 💁‍♀️ trenzas ✨ ¡a domicilio en Reus! 🍹 hecho con cariño desde Maracaibo 🇻🇪 para ti 💖 &nbsp;&nbsp;&nbsp;
+  </marquee>
+
+  <div class="page">
+
+    <!-- Header -->
+    <header class="head">
+      <h1 class="logo">by Anriuska</h1>
+      <p class="tagline">~ Hair &amp; Nails Artist · sabor venezolano en Reus ~</p>
+    </header>
+
+    <!-- Hero: polaroid + intro -->
+    <section class="hero">
+      <figure class="polaroid">
+        <img src="anri.png" alt="Anriuska" />
+        <figcaption>¡Hola, soy Anri! 🌺</figcaption>
+      </figure>
+      <div class="intro">
+        <p>¡Holaaa, mi amor! 👋 Soy <b>Anriuska</b>, tu manicurista y peinadora
+        venezolana. <b>Voy a tu casa</b> con todo lo necesario para que quedes
+        ¡<i>divina</i>! 💅✨</p>
+        <p>Uñas, diseños, glitter, trenzas y peinados pa' tus fiestas...
+        <b>todo a domicilio</b> aquí en Reus. 🏠💖</p>
+        <a class="btn" href="#" data-wa>💬 Escríbeme por WhatsApp</a>
+      </div>
+    </section>
+
+    <!-- nav -->
+    <nav class="nav">
+      <a href="#servicios">🌟 Servicios</a>
+      <a href="#galeria">📸 Galería</a>
+      <a href="#reservar">📅 Reservar</a>
+      <a href="#contacto">☎ Contacto</a>
+      <a href="https://www.instagram.com/by_anriuska/" target="_blank" rel="noopener">💖 Instagram</a>
+    </nav>
+
+    <!-- servicios -->
+    <section id="servicios" class="panel">
+      <h2>🌟 Servicios y precios 🌟</h2>
+      <ul class="pricelist">
+        <li><span>💅 Manicura semipermanente</span> <b>desde 00 €</b></li>
+        <li><span>✨ Uñas acrílicas / gel + glitter</span> <b>desde 00 €</b></li>
+        <li><span>🦶 Pedicura completa</span> <b>desde 00 €</b></li>
+        <li><span>💁‍♀️ Peinados &amp; trenzas</span> <b>desde 00 €</b></li>
+      </ul>
+      <p class="nota">~ precios de ejemplo, se confirman al reservar ~</p>
+    </section>
+
+    <!-- galeria -->
+    <section id="galeria" class="panel">
+      <h2>📸 Mis trabajitos 📸</h2>
+      <div class="gallery">
+        <div class="thumb">foto 1</div>
+        <div class="thumb">foto 2</div>
+        <div class="thumb">foto 3</div>
+        <div class="thumb">foto 4</div>
+      </div>
+      <p class="nota">~ fotos próximamente desde mi Instagram 🌴 ~</p>
+    </section>
+
+    <!-- reservar -->
+    <section id="reservar" class="panel">
+      <h2>📅 Reserva tu cita 📅</h2>
+      <p class="center">Aquí irá mi calendario (con Cal.com, ¡gratis!).
+      Mientras tanto, ¡escríbeme y cuadramos! 👇</p>
+      <p class="center"><a class="btn" href="#" data-wa>💬 Pedir cita por WhatsApp</a></p>
+    </section>
+
+    <!-- contacto -->
+    <section id="contacto" class="panel contacto">
+      <h2>☎ ¡Contáctame! ☎</h2>
+      <p class="center">
+        <a class="link" href="#" data-wa>💬 WhatsApp</a> ·
+        <a class="link" href="https://www.instagram.com/by_anriuska/" target="_blank" rel="noopener">📷 @by_anriuska</a>
+      </p>
+      <p class="center nota">📍 Zona de servicio: Reus y alrededores</p>
+    </section>
+
+    <!-- counter + footer -->
+    <div class="counter-wrap">
+      <span class="nota">Visitas:</span>
+      <span class="counter" id="counter">0000847</span>
+    </div>
+
+    <footer class="footer">
+      <p>🌺 Hecho con cariño · sabor venezolano 🇻🇪 en Reus 🇪🇸 · © <span id="year"></span> 🌺</p>
+    </footer>
+
+  </div>
+
+  <!-- style switcher -->
+  <div class="switcher" role="group" aria-label="Cambiar estilo">
+    <span class="sw-label">Estilo:</span>
+    <a class="sw-btn" href="index.html">✨ Festival</a>
+    <a class="sw-btn active" href="retro.html">📼 Retro</a>
+    <a class="sw-btn" href="brand.html">🤍 Marca</a>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -79,7 +79,39 @@ Aesthetic read from her own work + IG grid: **warm-elegant**, NOT loud nail-bar.
 One elegant scrolling page; cream base + dusty-blue/gold accents + wine CTAs;
 gallery as tight lookbook grid (IG squares drop in); sticky WhatsApp + Reservar.
 
+## Anriuska's REAL brand identity (from her own assets, 2026-06-16)
+She already has a professional visual identity — this is the real direction (option 3).
+- **Wordmark:** `ANRIUSKA` in a high-contrast Trajan-style serif (Cinzel-like), with
+  `Bermúdez` in a fine looping script overlapping beneath/right.
+- **Monogram:** intertwined `AB` inside a thin line circle, tagline *"Alcanzando tu
+  máxima belleza"* curved around it.
+- **Tagline:** "Alcanzando tu máxima belleza"
+- **Palette:** midnight navy (#16233b), deep wine/burgundy (#6b1f2b), warm greige/taupe
+  (#c3bcb2), cream (#f4efe8), silver. Elegant/editorial/premium — NOT festival.
+- **Motifs:** organic blob shapes with dashed-stitch outlines, fine line circles,
+  generous negative space.
+- **She has a physical studio too** (black salon, geometric LED lighting, ring light,
+  styling chairs) — not only a domicilio. Messaging can mention both.
+- **Real service menu:**
+  - *Uñas:* Recubrimiento de Polygel en uña natural con encapsulados (+ manicura
+    semiperm., acrílicas/gel, nail art, pedicura).
+  - *Cabello:* Lavado, Hidratación profunda, Secado, Planchado, Ondas, Tinturado,
+    Corte de puntas, Cortes elaborados en capas, Ondas al agua, Ondas Sirena con
+    máquina, Limpieza de horquetillas. ("Consulta todos nuestros precios.")
+- Her photo saved as `anri.png` (1080×1080).
+
+## Three style options (switcher at bottom of every page)
+Built 3 full self-contained themes; switcher toggles between them for comparison:
+1. `index.html` + `styles.css` — **✨ Festival**: dark tropical glitter maximalism
+   (sparkle cursor, neon, Y2K). Aleida's note: "festival modernillo", not enough sabor latino.
+2. `retro.html` + `retro.css` — **📼 Retro Latino**: warm early-2000s (papel picado,
+   Pacifico, polaroid, mango/turquoise/coral, beveled buttons).
+3. `brand.html` + `brand.css` — **🤍 Marca**: her ACTUAL elegant brand identity above.
+   **← recommended direction.**
+Shared `script.js` (guarded so festival-only fx don't break the other pages).
+Open naming question: lead with "ANRIUSKA Bermúdez" (her brand) vs "by Anriuska" (IG handle).
+
 ## Environment
 - Project folder: `/Users/rob/Documents/anriuska`
 - Node v24.15.0 available
-- Not a git repo yet
+- Repo: github.com/andratwiro/by-anriuska (public) · live: https://andratwiro.github.io/by-anriuska/

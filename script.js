@@ -1,5 +1,13 @@
 /* ===== footer year ===== */
-document.getElementById("year").textContent = new Date().getFullYear();
+const yearEl = document.getElementById("year");
+if (yearEl) yearEl.textContent = new Date().getFullYear();
+
+/* ===== fake visitor counter (retro / brand pages) ===== */
+const counterEl = document.getElementById("counter");
+if (counterEl) {
+  const base = 847 + (new Date().getDate() * 3);
+  counterEl.textContent = String(base).padStart(7, "0");
+}
 
 /* ===== WhatsApp wiring =====
    Set the number once we have it: intl format, no +, no spaces. e.g. "34600112233" */
@@ -29,8 +37,8 @@ document.querySelectorAll(".reveal").forEach((el) => io.observe(el));
 const reduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
 /* ===== Catatumbo lightning — occasional flash (Maracaibo's famous storm) ===== */
-if (!reduced) {
-  const bolt = document.querySelector(".lightning");
+const bolt = document.querySelector(".lightning");
+if (!reduced && bolt) {
   const strike = () => {
     bolt.classList.remove("flash");
     void bolt.offsetWidth; // reflow to restart animation
@@ -44,6 +52,7 @@ if (!reduced) {
 (function sparkleField() {
   if (reduced) return;
   const cv = document.getElementById("sparkles");
+  if (!cv) return;
   const ctx = cv.getContext("2d");
   let w, h, dpr;
   const COLORS = ["#ffd23f", "#ff4fd8", "#29e0d6", "#2b6fff", "#ffffff"];

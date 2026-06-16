@@ -87,6 +87,10 @@ strong { color: #fff; }
 .hero { position: relative; min-height: 100svh; display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 5rem 1.5rem 0; overflow: hidden; }
 .hero-inner { max-width: 760px; text-align: center; z-index: 2; }
 
+/* hero avatar */
+.avatar { width: 132px; height: 132px; margin: 0 auto 1.6rem; border-radius: 50%; padding: 4px; background: conic-gradient(from 0deg, var(--magenta), var(--amarillo), var(--cyan), var(--azul), var(--magenta)); box-shadow: 0 0 40px rgba(255,79,216,.5); animation: spinBall 6s linear infinite; }
+.avatar img { width: 100%; height: 100%; border-radius: 50%; object-fit: cover; border: 3px solid var(--night); display: block; }
+
 .eyebrow { font-family: "Manrope"; text-transform: uppercase; letter-spacing: 3px; font-size: .74rem; color: var(--gold); font-weight: 700; margin-bottom: 1.4rem; }
 
 .kinetic { font-size: clamp(3.2rem, 16vw, 9rem); font-weight: 900; display: flex; flex-direction: column; align-items: center; }
@@ -230,6 +234,13 @@ strong { color: #fff; }
   animation: spinBall 4s linear infinite;
 }
 @keyframes spinBall { to { transform: rotate(360deg); filter: hue-rotate(360deg); } }
+
+/* ---------- style switcher (shared on both themes) ---------- */
+.switcher { position: fixed; left: 50%; bottom: 1rem; transform: translateX(-50%); z-index: 70; display: flex; align-items: center; gap: .4rem; padding: .4rem .6rem; border-radius: 999px; background: rgba(11,4,32,.8); border: 1px solid rgba(255,255,255,.18); backdrop-filter: blur(12px); box-shadow: 0 8px 30px rgba(0,0,0,.45); font-family: "Manrope", system-ui, sans-serif; }
+.switcher .sw-label { font-size: .75rem; color: var(--muted); padding: 0 .3rem; }
+.switcher .sw-btn { text-decoration: none; font-size: .82rem; font-weight: 700; color: #fff; padding: .4rem .8rem; border-radius: 999px; transition: background .2s, color .2s; }
+.switcher .sw-btn.active { background: linear-gradient(120deg, var(--amarillo), var(--rojo)); color: var(--night); }
+.switcher .sw-btn:not(.active):hover { background: rgba(255,255,255,.12); }
 
 /* reveal on scroll */
 .reveal { opacity: 0; transform: translateY(30px); transition: opacity .7s ease, transform .7s ease; }
