@@ -3,24 +3,34 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>by Anriuska · Uñas y peinados a domicilio en Reus</title>
-  <meta name="description" content="Anriuska Bermúdez — Hair & Nails Artist. Manicura, uñas y peinados a domicilio en Reus. Reserva tu cita." />
+  <title>by Anriuska ✦ Uñas &amp; peinados a domicilio · Reus</title>
+  <meta name="description" content="Anriuska Bermúdez — Hair & Nails Artist venezolana en Reus. Uñas glitter, diseños personalizados y peinados a domicilio. Sabor de Maracaibo, brillo de verdad. ✨" />
 
-  <!-- Open Graph (WhatsApp / Instagram link previews) -->
-  <meta property="og:title" content="by Anriuska · Uñas y peinados a domicilio en Reus" />
-  <meta property="og:description" content="Manicura, uñas y peinados a domicilio en Reus. Reserva tu cita." />
+  <meta property="og:title" content="by Anriuska ✦ Uñas & peinados a domicilio · Reus" />
+  <meta property="og:description" content="Brillo venezolano a domicilio en Reus. Uñas, glitter y peinados. Reserva tu cita ✨" />
   <meta property="og:type" content="website" />
+  <meta name="theme-color" content="#0b0420" />
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Manrope:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@400;600;800;900&family=Caveat:wght@600;700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
+  <!-- glitter / sparkle layers -->
+  <canvas id="sparkles" aria-hidden="true"></canvas>
+  <div class="grain" aria-hidden="true"></div>
+  <div class="lightning" aria-hidden="true"></div>
+
+  <!-- floating sticky actions -->
+  <div class="dock">
+    <a class="dock-btn wa" href="#" data-wa aria-label="WhatsApp">💬</a>
+    <a class="dock-btn book" href="#reservar" aria-label="Reservar">Reservar ✦</a>
+  </div>
 
   <!-- NAV -->
   <header class="nav">
-    <a class="brand" href="#inicio">by&nbsp;Anriuska</a>
+    <a class="brand" href="#inicio">by<span>Anriuska</span></a>
     <nav class="nav-links">
       <a href="#servicios">Servicios</a>
       <a href="#galeria">Galería</a>
@@ -31,95 +41,124 @@
 
   <!-- HERO -->
   <section id="inicio" class="hero">
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+    <div class="blob blob-3"></div>
+    <div class="sun"></div>
+
     <div class="hero-inner">
-      <p class="eyebrow">Hair &amp; Nails Artist · Reus</p>
-      <h1>Uñas y peinados<br /><span>a domicilio</span></h1>
+      <p class="eyebrow">✦ Hair &amp; Nails Artist · de Maracaibo a Reus 🇻🇪 ✦</p>
+      <h1 class="kinetic">
+        <span class="line">UÑAS</span>
+        <span class="line shimmer">QUE</span>
+        <span class="line">BRILLAN</span>
+      </h1>
       <p class="lead">
-        Hola, soy <strong>Anriuska</strong>. Llevo la belleza hasta tu casa en Reus
-        y alrededores — manicura, uñas y peinados, sin que tengas que salir.
+        Soy <strong>Anriuska</strong> — llevo el <em>glitter</em>, el color y el sabor
+        venezolano hasta tu casa en Reus. Uñas, diseños y peinados <strong>a domicilio</strong>.
+        Tú relájate; yo pongo el brillo. ✨
       </p>
       <div class="hero-cta">
-        <a class="btn btn-primary" href="#reservar">Reservar cita</a>
-        <a class="btn btn-ghost" href="https://www.instagram.com/by_anriuska/" target="_blank" rel="noopener">Ver mi Instagram</a>
+        <a class="btn btn-primary" href="#reservar">Reservar mi cita</a>
+        <a class="btn btn-ghost" href="https://www.instagram.com/by_anriuska/" target="_blank" rel="noopener">@by_anriuska ↗</a>
+      </div>
+    </div>
+
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee-track">
+        <span>UÑAS GLITTER ✦ PEINADOS ✦ A DOMICILIO ✦ REUS ✦ DISEÑOS ✦ NAIL ART ✦ TRENZAS ✦ SHIMMER ✦ </span>
+        <span>UÑAS GLITTER ✦ PEINADOS ✦ A DOMICILIO ✦ REUS ✦ DISEÑOS ✦ NAIL ART ✦ TRENZAS ✦ SHIMMER ✦ </span>
       </div>
     </div>
   </section>
 
   <!-- SERVICIOS -->
   <section id="servicios" class="section">
-    <div class="section-head">
-      <h2>Servicios y precios</h2>
+    <div class="section-head reveal">
+      <p class="kicker">Lo que hago</p>
+      <h2>Servicios &amp; precios</h2>
       <p class="muted">Precios orientativos · se confirman al reservar.</p>
     </div>
     <div class="cards">
-      <article class="card">
-        <h3>Manicura semipermanente</h3>
-        <p class="card-desc">Esmaltado de larga duración con acabado perfecto.</p>
+      <article class="card reveal">
+        <div class="card-emoji">💅</div>
+        <h3>Semipermanente</h3>
+        <p class="card-desc">Esmaltado de larga duración, brillo de espejo.</p>
         <span class="price">desde 00 €</span>
       </article>
-      <article class="card">
-        <h3>Uñas acrílicas / gel</h3>
-        <p class="card-desc">Extensión y diseño personalizado a tu gusto.</p>
+      <article class="card reveal">
+        <div class="card-emoji">✨</div>
+        <h3>Acrílicas / Gel + glitter</h3>
+        <p class="card-desc">Extensión, diseño y todo el brillo que quieras.</p>
         <span class="price">desde 00 €</span>
       </article>
-      <article class="card">
+      <article class="card reveal">
+        <div class="card-emoji">🦶</div>
         <h3>Pedicura</h3>
-        <p class="card-desc">Cuidado completo y esmaltado para tus pies.</p>
+        <p class="card-desc">Cuidado completo y color para tus pies.</p>
         <span class="price">desde 00 €</span>
       </article>
-      <article class="card">
-        <h3>Peinados</h3>
-        <p class="card-desc">Recogidos, ondas y peinados para eventos.</p>
+      <article class="card reveal">
+        <div class="card-emoji">💁‍♀️</div>
+        <h3>Peinados &amp; trenzas</h3>
+        <p class="card-desc">Recogidos, ondas y trenzas para cualquier evento.</p>
         <span class="price">desde 00 €</span>
       </article>
     </div>
-    <p class="placeholder-note">⚠︎ Servicios y precios de ejemplo — pendientes de confirmar con Anriuska.</p>
+    <p class="placeholder-note">✎ Servicios y precios de ejemplo — pendientes de confirmar con Anriuska.</p>
   </section>
 
   <!-- GALERÍA -->
-  <section id="galeria" class="section section-alt">
-    <div class="section-head">
+  <section id="galeria" class="section section-dark">
+    <div class="section-head reveal">
+      <p class="kicker">Mi trabajo</p>
       <h2>Galería</h2>
-      <p class="muted">Algunos de mis trabajos.</p>
+      <p class="muted">Un vistazo al brillo. (Pronto, fotos reales ✨)</p>
     </div>
     <div class="gallery">
-      <div class="gallery-item">Foto 1</div>
-      <div class="gallery-item">Foto 2</div>
-      <div class="gallery-item">Foto 3</div>
-      <div class="gallery-item">Foto 4</div>
-      <div class="gallery-item">Foto 5</div>
-      <div class="gallery-item">Foto 6</div>
+      <div class="gallery-item tilt" style="--h:1">Foto 1</div>
+      <div class="gallery-item tilt" style="--h:2">Foto 2</div>
+      <div class="gallery-item tilt" style="--h:3">Foto 3</div>
+      <div class="gallery-item tilt" style="--h:4">Foto 4</div>
+      <div class="gallery-item tilt" style="--h:5">Foto 5</div>
+      <div class="gallery-item tilt" style="--h:6">Foto 6</div>
     </div>
-    <p class="placeholder-note">⚠︎ Fotos de ejemplo — pendientes de añadir desde su Instagram.</p>
+    <p class="placeholder-note light">✎ Fotos de ejemplo — pendientes de añadir desde su Instagram.</p>
   </section>
 
   <!-- RESERVAR -->
   <section id="reservar" class="section">
-    <div class="section-head">
+    <div class="section-head reveal">
+      <p class="kicker">Tu momento</p>
       <h2>Reserva tu cita</h2>
       <p class="muted">Elige el día y la hora que mejor te vaya.</p>
     </div>
-    <div class="booking-placeholder">
-      <p>📅 Aquí irá el calendario de reservas.</p>
-      <p class="muted">Se integrará con Cal.com (gratis) — Anriuska gestionará su propia disponibilidad.</p>
+    <div class="booking-placeholder reveal">
+      <div class="card-emoji">📅</div>
+      <p class="big">Aquí irá el calendario de reservas</p>
+      <p class="muted">Se integrará con Cal.com (gratis) — Anriuska gestiona su disponibilidad.</p>
+      <a class="btn btn-primary" href="#" data-wa>Mientras tanto, escríbeme 💬</a>
     </div>
   </section>
 
   <!-- CONTACTO -->
-  <section id="contacto" class="section section-alt">
-    <div class="section-head">
+  <section id="contacto" class="section section-dark">
+    <div class="section-head reveal">
+      <p class="kicker">Hablemos</p>
       <h2>Contacto</h2>
       <p class="muted">Zona de servicio: Reus y alrededores.</p>
     </div>
-    <div class="contact-cta">
-      <a class="btn btn-primary" href="#" data-wa>💬 Escríbeme por WhatsApp</a>
-      <a class="btn btn-ghost" href="https://www.instagram.com/by_anriuska/" target="_blank" rel="noopener">📷 @by_anriuska</a>
+    <div class="contact-cta reveal">
+      <a class="btn btn-primary" href="#" data-wa>💬 WhatsApp</a>
+      <a class="btn btn-ghost light" href="https://www.instagram.com/by_anriuska/" target="_blank" rel="noopener">📷 @by_anriuska</a>
     </div>
-    <p class="placeholder-note">⚠︎ Botón de WhatsApp pendiente del número de teléfono.</p>
+    <p class="placeholder-note light">✎ Botón de WhatsApp pendiente del número de teléfono.</p>
   </section>
 
   <footer class="footer">
-    <p>© <span id="year"></span> by Anriuska · Uñas y peinados a domicilio en Reus</p>
+    <p class="sig">by Anriuska</p>
+    <p>Hecho con <span class="heart">♥</span> y mucho brillo · sabor venezolano 🇻🇪 en Reus</p>
+    <p class="muted small">© <span id="year"></span> · Uñas y peinados a domicilio</p>
   </footer>
 
   <script src="script.js"></script>
