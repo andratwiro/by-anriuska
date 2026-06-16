@@ -29,11 +29,20 @@ Build her a website. Chosen features:
   Cal.com's file upload is an unshipped feature request; Square has no upload during
   booking; Fresha undocumented. SimplyBook.me does all four + Spanish + Google Calendar
   sync + embeddable widget we can style to her palette.
-  - Phase 1 (launch): service menu + prices + durations + photo-upload intake + calendar.
-  - Phase 2 (once regularised): enable deposits/prepayment. No rebuild.
-  - CAVEAT: free tier ~50 bookings/mo and only ONE "custom feature" at a time; Intake
-    Forms and Accept Deposits are SEPARATE custom features → photo intake + deposits
-    together needs the entry paid plan. Verify live pricing before she signs up.
+  - PRICING VERIFIED 2026-06-16 (simplybook.me/en/pricing):
+    - Free €0: 50 bookings/mo, 1 premium-feature slot.
+    - Basic ~€12/mo: 100 bookings/mo, 3 slots (Payments/Deposits incl.).
+    - Standard ~€25/mo: 500 bookings, 8 slots. Premium ~€50/mo: 2000, unlimited.
+    - Intake Forms, Calendar Sync, Deposits are EACH premium features (eat a slot).
+    - API access is PREMIUM-ONLY (~€50/mo) → bulk-loading the menu via API key is
+      NOT viable on Free/Basic. Set the menu up manually in the UI (small menu, fine).
+  - PLAN: start on FREE. Spend the 1 slot on the photo-upload Intake Form (her
+    must-have). Gets full service menu + prices + durations + SimplyBook's own booking
+    calendar. Trade-off: no Google Calendar 2-way sync (use SimplyBook app), no deposits.
+  - Phase 1 (launch, FREE): service menu + prices + durations + photo-upload intake.
+  - Phase 2 (busier/regularised → Basic ~€12/mo, 3 slots): add Calendar Sync + Deposits.
+    No rebuild. Claude to prep exact menu (service / duration / price / field config)
+    for manual entry + step-by-step setup instructions.
 - **Content source:** "Pull from her Instagram" — BUT both Instagram AND Facebook
   block automated scraping (login-gated; fetches only returned name + "Maracaibo").
   WORKAROUND: Claude can read image files. Owner to drop screenshots/downloads of her
