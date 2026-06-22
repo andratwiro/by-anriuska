@@ -1,0 +1,15 @@
+/* ===== Cálido =====
+   Elegante's dark-luxury look (elegant.css), reused as-is, carrying Retro's
+   warm, playful copy. This file only adds the pieces Retro's copy needs that
+   Elegante's skeleton didn't have — styled to match Elegante, not to fight it. */
+
+/* warm intro paragraph in the hero (Retro's "¡Holaaa, mi amor!" block) */
+.hero-lead {
+  max-width: 580px;
+  margin: 0 auto 2.4rem;
+  font-size: 1.06rem;
+  line-height: 1.85;
+  color: var(--silver);
+}
+.hero-lead strong { color: var(--white); font-weight: 400; }
+.hero-lead em { font-style: italic; color: var(--silver); }
