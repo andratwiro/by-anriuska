@@ -33,6 +33,42 @@ const io = new IntersectionObserver(
 );
 document.querySelectorAll(".reveal").forEach((el) => io.observe(el));
 
+/* ===== gallery lightbox (Cálido "Mis trabajitos") ===== */
+(function lightbox() {
+  const imgs = Array.from(document.querySelectorAll(".g-item img"));
+  if (!imgs.length) return;
+
+  const box = document.createElement("div");
+  box.className = "lightbox";
+  box.setAttribute("aria-hidden", "true");
+  box.innerHTML = '<button class="lb-close" type="button" aria-label="Cerrar">&times;</button><img alt="" />';
+  document.body.appendChild(box);
+  const big = box.querySelector("img");
+
+  const open = (i) => {
+    big.src = imgs[i].currentSrc || imgs[i].src;
+    big.alt = imgs[i].alt || "";
+    box.classList.add("open");
+    box.setAttribute("aria-hidden", "false");
+    document.body.style.overflow = "hidden";
+  };
+  const close = () => {
+    box.classList.remove("open");
+    box.setAttribute("aria-hidden", "true");
+    document.body.style.overflow = "";
+  };
+
+  imgs.forEach((im, i) => {
+    im.style.cursor = "zoom-in";
+    im.addEventListener("click", () => open(i));
+  });
+  // click anywhere except the image itself (backdrop or close button) closes it
+  box.addEventListener("click", (e) => { if (e.target !== big) close(); });
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape" && box.classList.contains("open")) close();
+  });
+})();
+
 /* ===== respect reduced motion for the fancy bits ===== */
 const reduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
